@@ -1,4 +1,3 @@
-```markdown
 # Diabetes Prediction with Deep Learning
 
 ## Project Overview
@@ -43,36 +42,3 @@ model = Sequential([
     Dense(1, activation = 'sigmoid')
 ])
 model.compile(optimizer = 'Adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-```
-
-## Results
-After 50 epochs, the model achieved the following performance on the test set:
-*   **Test Loss**: `{{model_test_loss}}`
-*   **Test Accuracy**: `{{model_test_accuracy}}`
-
-*(Note: The exact values for loss and accuracy can be found in the notebook's execution output.)*
-
-### Training and Validation Loss Plot
-A plot visualizing the training and validation loss over 50 epochs is generated to show the model's learning progression and identify potential overfitting.
-
-## Setup and Usage
-To replicate this project, follow these steps:
-
-### Prerequisites
-*   Python 3.x
-*   `pandas`
-*   `scikit-learn`
-*   `tensorflow`
-*   `matplotlib`
-
-### Installation
-Install the required Python packages:
-```bash
-pip install pandas scikit-learn tensorflow matplotlib
-```
-
-### Running the Notebook
-1.  Ensure you have the `diabetes.csv` file in the same directory as the notebook.
-2.  Open the Jupyter notebook (or Google Colab) and run all cells sequentially.
-3.  The notebook will perform data preprocessing, model training, evaluation, and save the trained model as `model.h5`.
-```
